@@ -93,7 +93,7 @@ First we compute the mean of steps for all the intervalls of the same type, then
 use this information to make a time series plot  of the 5-minute interval (x-axis) 
 and the average number of steps taken, averaged across all days (y-axis):
 
-```{r plot 2}
+```{r plot2}
 s_int<-tapply(my_data$steps, my_data$interval, mean, na.rm=TRUE)
 plot(unique(my_data$interval), s_int, type = "l", col="green", lwd=4, xlab = "Interval", ylab = "Avarage nr of steps",
      main= "Average number of steps per time interval in the day")
@@ -144,7 +144,7 @@ for(i in 1:length(my_data1$steps)){
 
 With this new data set we create an histogram of the total number of steps taken each day.
 
-```{r plot 3}
+```{r plot3}
 #Calculate the total number of steps taken per day
 s1<-tapply(my_data1$steps, my_data1$date, sum)
 
@@ -185,7 +185,7 @@ for(i in 1:length(my_data3$day)){
 With this final data set we can make a panel plot containing a time series plot of the 5-minute interval (x-axis) and 
 the average number of steps taken, averaged across all weekday days or weekend days (y-axis). 
 
-```{r plot 5, fig.height = 10}
+```{r plot4, fig.height = 10}
 
 #averaged across all week days:
 data_wd<-subset(my_data3, my_data3$weekend==FALSE)

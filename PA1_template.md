@@ -142,7 +142,7 @@ plot(unique(my_data$interval), s_int, type = "l", col="green", lwd=4, xlab = "In
      main= "Average number of steps per time interval in the day")
 ```
 
-![](PA1_template_files/figure-html/plot 2-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot2-1.png)<!-- -->
 
 We can see a peak of activity between 8:00 and 10:00 am.
 
@@ -218,7 +218,7 @@ hist(s1, main = "Frequency of total number of steps taken each day", col="green"
 rug(s1, ticksize = 0.04, lwd = 1)
 ```
 
-![](PA1_template_files/figure-html/plot 3-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot3-1.png)<!-- -->
 
 
 The* mean and median of the total number of steps taken per day* are given by:
@@ -290,7 +290,7 @@ plot(unique(data_we$interval), s_we, type = "l", col="green", lwd=4, xlab = "Int
      main= "Average number of steps per time interval in weekends")
 ```
 
-![](PA1_template_files/figure-html/plot 5-1.png)<!-- -->
+![](PA1_template_files/figure-html/plot4-1.png)<!-- -->
 
 
 
